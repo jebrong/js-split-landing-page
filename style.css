@@ -51,17 +51,18 @@ body {
   text-align: center;
   padding: 1rem 1rem;
   text-decoration: none;
-  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .btn.left-button:hover {
-  background-color: blue;
+  background-color: white;
+  color: #3d5a80;
 }
 
 .btn.right-button:hover {
-  background-color: red;
+  background-color: white;
+  color: #ee6c4d;
 }
 
 .hover-left .left {
