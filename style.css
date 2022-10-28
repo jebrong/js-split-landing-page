@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+
+  position: relative;
+}
+
+.split {
+  position: absolute;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.split.left {
+  width: 50%;
+  left: 0;
+  background-color: #3d5a80;
+}
+
+.split.right {
+  width: 50%;
+  right: 0;
+  background-color: #ee6c4d;
+}
+
+.split h1 {
+  background-color: white;
+}
+
+.btn {
+  width: 100px;
+  color: white;
+  border-radius: 2px;
+  border: white solid 2px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn.left-button:hover {
+  background-color: blue;
+}
+
+.btn.right-button:hover {
+  background-color: red;
+}
+
+.hover-left .left {
+  width: 80%;
+  transition: all 1s;
+}
+.hover-left .right {
+  width: 20%;
+  transition: all 1s;
+}
+
+.hover-right .right {
+  width: 80%;
+  transition: width 1s;
+}
+.hover-right .left {
+  width: 20%;
+  transition: width 1s;
+}
